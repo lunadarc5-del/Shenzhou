@@ -1,12 +1,13 @@
 
 <html lang="id">
-
+  
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chronicles of the Ninth Circle</title>
 <style>
-body { margin:0; font-family: Georgia, serif; background:#0f0f12; color:#d6d8e0; line-height:1.8; }
-section { display:none; padding:60px 20px; max-width:800px; margin:auto; }
+body { margin:0; font-family: Georgia, serif; background:#0f0f12; color:#d6d8e0; line-height:1.9; padding-bottom:50px; }
+section { display:none; padding:40px 20px; max-width:800px; margin:auto; }
 .hero { display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh; text-align:center; background:linear-gradient(#0f0f12,#1a1c22); }
 .hero h1 { font-size:48px; letter-spacing:4px; margin:0; color:#c9ccd6; }
 .hero h2 { margin-top:10px; font-size:22px; color:#8a8fa3; }
@@ -16,7 +17,8 @@ section { display:none; padding:60px 20px; max-width:800px; margin:auto; }
 .chapter-list a, .chapter-sublist a { display:block; margin:8px 0; text-decoration:none; color:#d6d8e0; border-bottom:1px solid #333; padding-bottom:5px; cursor:pointer; }
 .chapter-list a:hover, .chapter-sublist a:hover { color:white; border-color:#6d5cae; }
 h1,h2 { text-align:center; }
-.back { margin-top:30px; text-align:center; opacity:0.6; cursor:pointer; }
+.back, .next { margin-top:30px; text-align:center; opacity:0.7; cursor:pointer; display:inline-block; padding:5px 10px; }
+.back:hover, .next:hover { opacity:1; color:#6d5cae; }
 .progress { position:fixed; top:0; left:0; height:3px; background:#6d5cae; width:0%; z-index:100; }
 .comment-section { margin-top:20px; border-top:1px solid #444; padding-top:15px; }
 .comment-section input, .comment-section textarea { width:100%; margin:5px 0; padding:8px; background:#1a1c22; border:1px solid #555; color:#d6d8e0; }
@@ -24,6 +26,7 @@ h1,h2 { text-align:center; }
 .comment-section button:hover { background:#3a2a55; }
 .like-btn { margin-top:10px; cursor:pointer; font-size:16px; display:inline-block; }
 .author { margin-top:10px; font-style:italic; opacity:0.7; }
+p strong.character { color:white; font-weight:bold; }
 </style>
 </head>
 <body>
@@ -67,8 +70,12 @@ h1,h2 { text-align:center; }
 
 <!-- GENERATE BAB & CHAPTER -->
 <script>
-const totalBab=10;
-const chaptersPerBab=[3,4,3,2,3,3,2,2,3,3]; // jumlah chapter tiap bab
+const totalBab = 10;
+const chaptersPerBab = [3,4,3,2,3,3,2,2,3,3]; 
+
+function highlightCharacters(text){
+  return text.replace(/\*(.*?)\*/g,'<strong class="character">$1</strong>');
+}
 
 for(let i=1;i<=totalBab;i++){
   document.write(`<section id="bab${i}"><h1>Bab ${i}</h1><div class="chapter-sublist">`);
@@ -82,13 +89,12 @@ for(let i=1;i<=totalBab;i++){
       <h2>Bab ${i} — Chapter ${j}</h2>
       <p>`);
 
-    // Masukkan chapter 1 & 2 sesuai teks yang dikirim
     if(i===1 && j===1){
-      document.write(`Langit pecah dalam satu kilatan cahaya.
+      document.write(highlightCharacters(`Langit pecah dalam satu kilatan cahaya.
 
 Logam saling menghantam. Orang-orang berteriak. Lalu semuanya gelap.
 
-Lucien tidak merasakan sakit. Hanya rasa jatuh yang panjang, seolah tubuhnya terlepas dari dunia.
+*Lucien* tidak merasakan sakit. Hanya rasa jatuh yang panjang, seolah tubuhnya terlepas dari dunia.
 
 Ia ingin membuka mata. Namun tidak ada cahaya. Tidak ada suara. Tidak ada apa-apa.
 
@@ -110,17 +116,11 @@ Ia turun dari tempat tidur. Kakinya menyentuh lantai marmer. Tidak ada suara. Ia
 
 Bukan karena ruangan itu hening—melainkan karena dunia tidak memberi gema atas langkahnya.
 
-Lucien berjalan ke arah cermin.
+*Lucien* berjalan ke arah cermin.
 
 Seorang pemuda menatapnya dari balik kaca. Rambut hitam tersisir rapi. Wajah muda dengan garis lembut bangsawan. Mata abu-abu yang terlalu tenang untuk seseorang yang baru saja mati.
 
 Sebuah nama muncul perlahan di benaknya.
-
-*Lucien D’Armont.*
-
-Ingatan yang bukan miliknya mengalir, rapi dan tertata. Putra kedua keluarga D’Armont. Kota Funia. Baru saja menjalani ritual penerimaan Circle.
-
-Ia terdiam cukup lama.
 
 *Lucien:* “Aku mati… dan bangun di sini.”
 
@@ -136,7 +136,7 @@ Tingkatan kekuatan bagi para Arkanis. Setiap manusia yang menjalani ritual hanya
 
 Jika gagal—mereka kehilangan kewarasan.
 
-Tubuh ini berhasil. Circle 9 – Jalur Malam (Silent).
+Tubuh ini berhasil. *Circle 9 – Jalur Malam (Silent).*
 
 Kemampuannya sederhana. Meredam suara. Menghapus gema.
 
@@ -146,7 +146,7 @@ Namun—
 
 Bayangannya di cermin bergerak sepersekian detik lebih lambat.
 
-Lucien membeku. Ia mengangkat tangan. Bayangan mengikuti. Tepat. Seolah tidak pernah ada keterlambatan.
+*Lucien* membeku. Ia mengangkat tangan. Bayangan mengikuti. Tepat. Seolah tidak pernah ada keterlambatan.
 
 Hening. Ia menatap matanya sendiri. Ada sesuatu yang tidak berasal dari Jalur Malam (Silent). Sesuatu yang tidak tercatat dalam sistem Circle.
 
@@ -164,7 +164,7 @@ Uskup Aldric Mourne berdiri tegak dalam jubah hitam tanpa ornamen. Tatapannya ta
 
 Di sampingnya, Sister Mirella Vance membuka buku catatan kecil.
 
-*Aldric:* “Ritual berjalan lancar. Namun stabilitas tetap harus diperiksa. Bagaimana perasaanmu, Lucien?”
+*Aldric:* “Ritual berjalan lancar. Namun stabilitas tetap harus diperiksa. Bagaimana perasaanmu, *Lucien*?”
 
 *Lucien:* “Tubuh saya… stabil. Tidak ada distorsi.”
 
@@ -192,42 +192,42 @@ Orang-orang mundur.
 
 *Orang-orang:*“Dissonan!”
 
-Lucien berdiri tidak jauh dari sana. Mengamati. Menghitung risiko.
+*Lucien* berdiri tidak jauh dari sana. Mengamati. Menghitung risiko.
 
 Tubuh Arkanis itu bergetar hebat. Lingkaran cahaya di bawahnya retak. Dan untuk satu detik—suara di seluruh pelabuhan lenyap.
 
-Bukan karena kemampuan Lucien. Lebih luas dari itu. Seolah dunia sendiri berhenti bernapas.
+Bukan karena kemampuan *Lucien*. Lebih luas dari itu. Seolah dunia sendiri berhenti bernapas.
 
-Lucien merasakannya. Di dalam dirinya, sesuatu menjawab. Bukan Jalur Malam (Silent). Lebih dalam. Lebih tua.
+*Lucien* merasakannya. Di dalam dirinya, sesuatu menjawab. Bukan Jalur Malam (Silent). Lebih dalam. Lebih tua.
 
 Lingkaran di kaki Arkanis itu padam. Ia ambruk. Suara kembali. Orang-orang berteriak. Gereja datang.
 
-Lucien tetap berdiri. Wajahnya tenang.
+*Lucien* tetap berdiri. Wajahnya tenang.
 
 Namun untuk pertama kalinya sejak ia bangun—ia tahu.
-Ia tidak hanya membawa Circle 9 – Jalur Malam (Silent).
-Dan sesuatu di dalam dirinya telah bangkit bersamaan dengan dirinya.`);
+Ia tidak hanya membawa *Circle 9 – Jalur Malam (Silent)*.
+Dan sesuatu di dalam dirinya telah bangkit bersamaan dengan dirinya.`));
     } else if(i===1 && j===2){
-      document.write(`Malam jatuh di Funia. Lampu gas dan obor pelabuhan berkelip di kejauhan.
+      document.write(highlightCharacters(`Malam jatuh di Funia. Lampu gas dan obor pelabuhan berkelip di kejauhan.
 
-Dari balkon kamarnya, Lucien menatap jalan-jalan kota yang sepi.
+Dari balkon kamarnya, *Lucien* menatap jalan-jalan kota yang sepi.
 
 *Lucien:* “Tenang… terlalu tenang.”
 
 Funia selalu terlihat damai malam hari. Tapi di bawah kedamaian itu, ada keseimbangan rapuh—bangsawan, Gereja, Arkanis. Setiap langkah salah, bisa memicu Dissonan.
 
-Lucien menutup mata. Ia memusatkan pikiran.
+*Lucien* menutup mata. Ia memusatkan pikiran.
 Sunyi menyebar dari dirinya, seperti biasa. Tapi ada sesuatu… ada getaran halus di bawah sunyi itu.
 Seolah dunia di sekelilingnya menahan napas.
 
 Ia membuka mata dan menatap meja kerja. Sebuah kotak kayu kecil tersimpan rapi—relik keluarga D’Armont, Circle 9.
 
-Lucien melangkah mendekat. Jari-jari tangannya terulur.
+*Lucien* melangkah mendekat. Jari-jari tangannya terulur.
 
 *Lucien:* “Apa ini…?”
 
 Begitu jarinya hampir menyentuh kotak, tubuhnya bereaksi. Getaran halus merambat, menilai.
-Lucien mundur satu langkah.
+*Lucien* mundur satu langkah.
 
 *Lucien:* “Menilai aku?”
 (dengan nada setengah tersenyum)
@@ -235,21 +235,21 @@ Lucien mundur satu langkah.
 Ia duduk, menatap kotak dari dekat.
 Sunyi mengalir di sekelilingnya. Tapi di dalamnya, sesuatu lain juga bergerak. Sesuatu yang lebih tua, lebih tua dari Circle, lebih tua dari Gereja.
 
-Lucien menepuk meja.
+*Lucien* menepuk meja.
 
 *Lucien:* “Baik… mari kita lihat seberapa jauh kau bisa bawa aku.”
 
-Kotak bergetar sedikit. Cahaya samar memantul di dinding. Lucien menahan napas.
+Kotak bergetar sedikit. Cahaya samar memantul di dinding. *Lucien* menahan napas.
 
 *Suara:* “Bangkit.”
 
-Lucien menatap kotak, menatap mata yang seakan hidup di kayu itu.
+*Lucien* menatap kotak, menatap mata yang seakan hidup di kayu itu.
 
 *Lucien:* “Bangkit… oke. Aku lihat dulu.”
 
 Ia menempatkan kedua tangan di atas kotak. Sunyi mengalir keluar, menenangkan. Tapi di dalam ketenangan itu, sesuatu lain juga bangkit. Lebih tua, lebih besar dari Circle.
 
-Lampu di balkon bergetar sebentar. Riak energi muncul di udara. Lucien menunduk, fokus.
+Lampu di balkon bergetar sebentar. Riak energi muncul di udara. *Lucien* menunduk, fokus.
 
 *Lucien:* “Diam… tunggu… jangan salah langkah.”
 
@@ -257,7 +257,7 @@ Ia menarik napas panjang.
 
 *Lucien:* “Biar kubuat percobaan kecil.”
 
-Lucien memutar relik perlahan, jari-jarinya menyentuh ukiran halus.
+*Lucien* memutar relik perlahan, jari-jarinya menyentuh ukiran halus.
 
 *Lucien:* “Kalau aku cuma sentuh ringan, apa yang terjadi?”
 
@@ -274,12 +274,12 @@ Ia menatap kotak dengan mata setengah berbinar, setengah khawatir.
 
 *Lucien:* “Kalau Gereja tahu… mereka pasti tidak akan senang.”
 
-Malam semakin dalam. Semua orang di Funia tidur. Tapi Lucien tidak.
+Malam semakin dalam. Semua orang di Funia tidur. Tapi *Lucien* tidak.
 Ia menyesuaikan ritme tangannya dengan relik, merasakan sunyi dan getaran aneh itu bersatu.
 
 *Suara:* “Lebih jauh…”
 
-Lucien menatap sekeliling.
+*Lucien* menatap sekeliling.
 
 *Lucien:* “Lebih jauh… oke.”
 Ia mencondongkan tubuh, menekan tangan ke relik. Sunyi meluas. Ruangan terasa lebih berat. Kotak bergetar lebih kuat. Riak cahaya memantul ke dinding.
@@ -288,13 +288,13 @@ Ia tersenyum lagi, kali ini sedikit kagum.
 
 *Lucien:* “Jadi, ini… bukan hanya Circle 9-ku. Ada sesuatu di sini. Sesuatu yang… lain.”
 
-Hening malam itu pecah oleh langkah kaki di koridor. Lucien menoleh.
+Hening malam itu pecah oleh langkah kaki di koridor. *Lucien* menoleh.
 
 *Lucien:* “Siapa?”
 
 Tidak ada siapa-siapa. Hanya bayangan lampu yang bergerak. Tapi ia bisa merasakan sesuatu—sesuatu mengamati, menunggu.
 
-Lucien menarik napas, menepuk meja.
+*Lucien* menarik napas, menepuk meja.
 
 *Lucien:* “Diam… tunggu. Aku masih belajar.”
 
@@ -304,11 +304,11 @@ Ia menatap kotak lagi.
 
 Dan di balik sunyi, sesuatu mulai merespons. Tidak tergesa. Tidak menakutkan. Tetapi sadar. Lebih tua dari Circle. Lebih tua dari Gereja.
 
-Malam itu, Lucien memahami:
+Malam itu, *Lucien* memahami:
 
 *Lucien:* “Silent bukan hanya diam. Silent adalah memilih kapan dunia harus berhenti meresponsnya.”
 
-Dan sesuatu di dalam dirinya… perlahan, mulai bangkit.`);
+Dan sesuatu di dalam dirinya… perlahan, mulai bangkit.`));
     } else {
       document.write(`Isi cerita Bab ${i}, Chapter ${j}...`);
     }
@@ -321,79 +321,65 @@ Dan sesuatu di dalam dirinya… perlahan, mulai bangkit.`);
         <button onclick="addComment('bab${i}-ch${j}')">Kirim</button>
         <div id="comments-list-bab${i}-ch${j}"></div>
       </div>
-      <div style="display:flex; justify-content:space-between; margin-top:20px;">
-        <div class="back" onclick="openSection('bab${i}')">← Kembali ke Bab ${i}</div>
-        <div class="back" onclick="openSection('arsip')">← Kembali ke Arsip Bab</div>
+      <div style="text-align:center; margin-top:20px;">
+        <span class="back" onclick="backChapter(${i},${j})">← Previous</span> |
+        <span class="next" onclick="nextChapter(${i},${j})">Next →</span>
       </div>
+      <div class="back" onclick="openSection('arsip')">← Kembali ke Arsip Bab</div>
     </section>`);
   }
 }
-</script>
-
-<!-- SCRIPT LIKE & KOMENTAR -->
-<script>
-const likeCounts = {};
-const commentsData = {};
 
 function openSection(id){
   document.querySelectorAll('section').forEach(s=>s.style.display='none');
   document.getElementById(id).style.display='block';
-  renderLikesAndComments(id);
+  window.scrollTo({top:0, behavior:'smooth'});
 }
 
-function openChapter(bab, chapter){
-  openSection(chapter);
+function openChapter(bab,ch){
+  openSection(ch);
 }
 
-function toggleLike(chapterId){
-  if(!likeCounts[chapterId]) likeCounts[chapterId]=0;
-  likeCounts[chapterId]++;
-  document.getElementById('like-'+chapterId).textContent = likeCounts[chapterId];
+function backChapter(bab,chapter){
+  if(chapter>1){
+    openChapter(`bab${bab}`,`bab${bab}-ch${chapter-1}`);
+  } else {
+    openChapter(`bab${bab}`,`bab${bab}-ch1`);
+  }
 }
 
-function addComment(chapterId){
-  const textarea = document.getElementById('comment-'+chapterId);
-  if(!textarea) return;
-  const value = textarea.value.trim();
-  if(value==='') return;
-  if(!commentsData[chapterId]) commentsData[chapterId]=[];
-  commentsData[chapterId].push(value);
-  textarea.value='';
-  renderComments(chapterId);
+function nextChapter(bab,chapter){
+  const maxChapters = [3,4,3,2,3,3,2,2,3,3];
+  if(chapter<maxChapters[bab-1]){
+    openChapter(`bab${bab}`,`bab${bab}-ch${chapter+1}`);
+  }
 }
 
-function renderComments(chapterId){
-  const list = document.getElementById('comments-list-'+chapterId);
-  if(!list) return;
-  list.innerHTML='';
-  const comments = commentsData[chapterId] || [];
-  comments.forEach(c=>{
+function toggleLike(id){
+  const el = document.getElementById('like-'+id);
+  let count = parseInt(el.textContent);
+  count++;
+  el.textContent=count;
+}
+
+function addComment(id){
+  const input = document.getElementById('comment-'+id);
+  const list = document.getElementById('comments-list-'+id);
+  if(input.value.trim()!==''){
     const div = document.createElement('div');
-    div.textContent = c;
-    div.style.borderBottom='1px solid #444';
+    div.textContent = input.value;
+    div.style.borderTop='1px solid #555';
     div.style.padding='4px 0';
     list.appendChild(div);
-  });
+    input.value='';
+  }
 }
 
-function renderLikesAndComments(sectionId){
-  const likes = document.querySelectorAll('#'+sectionId+' .like-btn span');
-  likes.forEach(span=>{
-    const chapterId = span.id.replace('like-','');
-    span.textContent = likeCounts[chapterId] || 0;
-  });
-  const comments = document.querySelectorAll('#'+sectionId+' .comment-section');
-  comments.forEach(cs=>{
-    const chapterId = cs.querySelector('textarea').id.replace('comment-','');
-    renderComments(chapterId);
-  });
-}
-
-window.addEventListener('scroll',()=>{
-  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrolled = (winScroll / height) * 100;
-  document.getElementById('progressBar').style.width = scrolled+'%';
+window.addEventListener('scroll',function(){
+  const winScroll=document.body.scrollTop || document.documentElement.scrollTop;
+  const height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled=(winScroll/height)*100;
+  document.getElementById('progressBar').style.width=scrolled+'%';
 });
 </script>
 
