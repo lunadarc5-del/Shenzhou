@@ -11,18 +11,18 @@ section { display:none; padding:60px 20px; max-width:800px; margin:auto; }
 .hero h1 { font-size:48px; letter-spacing:4px; margin:0; color:#c9ccd6; }
 .hero h2 { margin-top:10px; font-size:22px; color:#8a8fa3; }
 .hero p { margin-top:25px; font-style:italic; opacity:0.8; max-width:700px; }
-.btn { margin-top:35px; padding:12px 28px; background:#2a1f3a; color:white; cursor:pointer; text-decoration:none; }
+.btn { margin-top:20px; padding:10px 24px; background:#2a1f3a; color:white; cursor:pointer; text-decoration:none; border-radius:5px; }
 .btn:hover { background:#3a2a55; }
-.chapter-list a { display:block; margin:15px 0; text-decoration:none; color:#d6d8e0; border-bottom:1px solid #333; padding-bottom:8px; cursor:pointer; }
-.chapter-list a:hover { color:white; border-color:#6d5cae; }
+.chapter-list a, .chapter-sublist a { display:block; margin:8px 0; text-decoration:none; color:#d6d8e0; border-bottom:1px solid #333; padding-bottom:5px; cursor:pointer; }
+.chapter-list a:hover, .chapter-sublist a:hover { color:white; border-color:#6d5cae; }
 h1,h2 { text-align:center; }
-.back { margin-top:50px; text-align:center; opacity:0.6; cursor:pointer; }
+.back { margin-top:30px; text-align:center; opacity:0.6; cursor:pointer; }
 .progress { position:fixed; top:0; left:0; height:3px; background:#6d5cae; width:0%; z-index:100; }
-.comment-section { margin-top:30px; border-top:1px solid #444; padding-top:20px; }
-.comment-section input, .comment-section textarea { width:100%; margin:5px 0; padding:10px; background:#1a1c22; border:1px solid #555; color:#d6d8e0; }
-.comment-section button { padding:8px 16px; margin-top:5px; background:#2a1f3a; color:white; border:none; cursor:pointer; }
+.comment-section { margin-top:20px; border-top:1px solid #444; padding-top:15px; }
+.comment-section input, .comment-section textarea { width:100%; margin:5px 0; padding:8px; background:#1a1c22; border:1px solid #555; color:#d6d8e0; }
+.comment-section button { padding:6px 14px; margin-top:5px; background:#2a1f3a; color:white; border:none; cursor:pointer; border-radius:4px; }
 .comment-section button:hover { background:#3a2a55; }
-.like-btn { margin-top:20px; cursor:pointer; font-size:18px; }
+.like-btn { margin-top:10px; cursor:pointer; font-size:16px; display:inline-block; }
 </style>
 </head>
 <body>
@@ -34,16 +34,12 @@ h1,h2 { text-align:center; }
   <div class="hero">
     <h1>Chronicles of the Ninth Circle</h1>
     <h2>A Victorian Gothic Occult Romance</h2>
-    <p><strong>Genre:</strong> Victorian Gothic • Occult • Mystery • Aristocratic Romance • Dark Fantasy</p>
+    <p><strong>Genre:</strong> Victorian Gothic • Occult • Mystery • Romance</p>
     <p><strong>Sinopsis (ID):</strong><br>
-      Lucien tidak pernah percaya pada takdir. Hingga sebuah dentang logam dan kilatan cahaya mengakhiri hidupnya di dunia yang ia kenal.<br>
-      Ia terbangun dalam tubuh bangsawan muda, menerima Lingkaran Kesembilan—Jalur Malam yang menguasai kesunyian.<br>
-      Namun sesuatu lebih tua dari doktrin itu sendiri telah bangkit. Di balik intrik aristokrat dan pengawasan Gereja, sebuah rahasia menunggu untuk diungkap.
+      Lucien, seorang pemuda biasa, hidupnya berakhir tiba-tiba dalam sebuah kecelakaan. Ia terbangun di dunia baru, dalam tubuh bangsawan muda dan menerima Circle 9 — Jalur Malam yang menguasai kesunyian. Bersamaan dengan kebangkitan jalur ini, sesuatu yang lebih tua dan lebih berbahaya juga bangkit. Di tengah intrik aristokrat, pengawasan Gereja, dan misteri yang menanti untuk dipecahkan, Lucien harus menemukan jalan hidup barunya—sementara hati dan romansa mulai tumbuh perlahan.
     </p>
     <p><strong>Synopsis (EN):</strong><br>
-      Lucien never believed in destiny—until the sound of shattering metal and a flash of light ended his life.<br>
-      He awakens in the body of a young aristocrat, receiving the Ninth Circle—The Path of Silence.<br>
-      Yet something older than doctrine itself stirs. Beneath aristocratic intrigue and the Church's watch, a secret waits to be unveiled.
+      Lucien, an ordinary young man, suddenly meets his end in a tragic accident. He awakens in a new world, in the body of a young aristocrat, receiving Circle 9 — the Path of Night, mastering silence. Alongside this awakening, something older and more dangerous stirs. Amid aristocratic intrigue, Church surveillance, and mysteries waiting to be unraveled, Lucien must find his new path—while romance begins to bloom slowly.
     </p>
     <div class="btn" onclick="openSection('arsip')">Begin the Chronicle</div>
   </div>
@@ -56,177 +52,52 @@ h1,h2 { text-align:center; }
     <a onclick="openSection('bab1')">Bab 1 — Circle 9: Jalur Malam</a>
     <a onclick="openSection('bab2')">Bab 2 — Retakan Stabilitas</a>
     <a onclick="openSection('bab3')">Bab 3 — Bayangan Terlarang</a>
-    <a onclick="openSection('bab4')">Bab 4 — Malam Tanpa Bintang</a>
-    <a onclick="openSection('bab5')">Bab 5 — Resonansi Lama</a>
-    <a onclick="openSection('bab6')">Bab 6 — Suara yang Hilang</a>
-    <a onclick="openSection('bab7')">Bab 7 — Keheningan Memanggil</a>
-    <a onclick="openSection('bab8')">Bab 8 — Retak Aristokrat</a>
-    <a onclick="openSection('bab9')">Bab 9 — Lingkaran Terakhir</a>
-    <a onclick="openSection('bab10')">Bab 10 — Kembali dari Malam</a>
+    <a onclick="openSection('bab4')">Bab 4 — Gereja Memantau</a>
+    <a onclick="openSection('bab5')">Bab 5 — Intrik Aristokrat</a>
+    <a onclick="openSection('bab6')">Bab 6 — Resonansi Gelap</a>
+    <a onclick="openSection('bab7')">Bab 7 — Rahasia Masa Lalu</a>
+    <a onclick="openSection('bab8')">Bab 8 — Romance yang Perlahan</a>
+    <a onclick="openSection('bab9')">Bab 9 — Teror dan Kebenaran</a>
+    <a onclick="openSection('bab10')">Bab 10 — Kebangkitan Penuh</a>
   </div>
   <div class="back" onclick="openSection('landing')">Kembali ke Landing</div>
 </section>
 
-<!-- CHAPTERS -->
-<section id="bab1">
-  <h1>Bab 1 — Circle 9: Jalur Malam</h1>
-  <p>Langit pecah dalam satu kilatan cahaya. Logam saling menghantam. Orang-orang berteriak. Lalu semuanya gelap...</p>
-  <div class="like-btn" onclick="toggleLike('bab1')">❤️ <span id="like-bab1">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab1" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab1')">Kirim</button>
-    <div id="comments-list-bab1"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('arsip')">Back to Arsip</div>
-    <div class="btn" onclick="openSection('bab2')">Next Chapter →</div>
-  </div>
-</section>
+<!-- LOOP: 10 BAB -->
+<script>
+const totalBab=10;
+const chaptersPerBab=[3,4,3,2,3,3,2,2,3,3]; // contoh jumlah chapter tiap bab
 
-<section id="bab2">
-  <h1>Bab 2 — Retakan Stabilitas</h1>
-  <p>Malam turun tanpa suara. Lucien berdiri di balkon kediaman D’Armont...</p>
-  <div class="like-btn" onclick="toggleLike('bab2')">❤️ <span id="like-bab2">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab2" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab2')">Kirim</button>
-    <div id="comments-list-bab2"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('bab1')">← Previous Chapter</div>
-    <div class="btn" onclick="openSection('bab3')">Next Chapter →</div>
-  </div>
-</section>
+for(let i=1;i<=totalBab;i++){
+  // BAB SECTION
+  document.write(`<section id="bab${i}"><h1>Bab ${i}</h1><div class="chapter-sublist">`);
+  for(let j=1;j<=chaptersPerBab[i-1];j++){
+    document.write(`<a onclick="openChapter('bab${i}','bab${i}-ch${j}')">Chapter ${j}</a>`);
+  }
+  document.write(`</div><div class="back" onclick="openSection('arsip')">← Kembali ke Arsip Bab</div></section>`);
 
-<section id="bab3">
-  <h1>Bab 3 — Bayangan Terlarang</h1>
-  <p>Lucien mulai menyadari rahasia yang tersembunyi di balik Jalur Malam. Intrik aristokrat muncul...</p>
-  <div class="like-btn" onclick="toggleLike('bab3')">❤️ <span id="like-bab3">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab3" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab3')">Kirim</button>
-    <div id="comments-list-bab3"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('bab2')">← Previous Chapter</div>
-    <div class="btn" onclick="openSection('bab4')">Next Chapter →</div>
-  </div>
-</section>
-
-<section id="bab4">
-  <h1>Bab 4 — Malam Tanpa Bintang</h1>
-  <p>Gereja memonitor setiap gerakannya. Bayangan yang terlambat bergerak membuatnya semakin penasaran...</p>
-  <div class="like-btn" onclick="toggleLike('bab4')">❤️ <span id="like-bab4">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab4" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab4')">Kirim</button>
-    <div id="comments-list-bab4"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('bab3')">← Previous Chapter</div>
-    <div class="btn" onclick="openSection('bab5')">Next Chapter →</div>
-  </div>
-</section>
-
-<section id="bab5">
-  <h1>Bab 5 — Resonansi Lama</h1>
-  <p>Misteri yang lebih tua dari Circle mulai muncul. Sebuah ikatan perlahan tumbuh di antara keheningan...</p>
-  <div class="like-btn" onclick="toggleLike('bab5')">❤️ <span id="like-bab5">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab5" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab5')">Kirim</button>
-    <div id="comments-list-bab5"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('bab4')">← Previous Chapter</div>
-    <div class="btn" onclick="openSection('bab6')">Next Chapter →</div>
-  </div>
-</section>
-
-<section id="bab6">
-  <h1>Bab 6 — Suara yang Hilang</h1>
-  <p>Kemampuan Lucien menguak hal-hal yang tidak tercatat dalam doktrin. Ancaman mulai muncul...</p>
-  <div class="like-btn" onclick="toggleLike('bab6')">❤️ <span id="like-bab6">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab6" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab6')">Kirim</button>
-    <div id="comments-list-bab6"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('bab5')">← Previous Chapter</div>
-    <div class="btn" onclick="openSection('bab7')">Next Chapter →</div>
-  </div>
-</section>
-
-<section id="bab7">
-  <h1>Bab 7 — Keheningan Memanggil</h1>
-  <p>Romance mulai berisiko, pilihan moral muncul, ketegangan dengan Gereja meningkat...</p>
-  <div class="like-btn" onclick="toggleLike('bab7')">❤️ <span id="like-bab7">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab7" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab7')">Kirim</button>
-    <div id="comments-list-bab7"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('bab6')">← Previous Chapter</div>
-    <div class="btn" onclick="openSection('bab8')">Next Chapter →</div>
-  </div>
-</section>
-
-<section id="bab8">
-  <h1>Bab 8 — Retak Aristokrat</h1>
-  <p>Intrik keluarga dan politik muncul, Gereja mulai curiga, rahasia sedikit terbuka...</p>
-  <div class="like-btn" onclick="toggleLike('bab8')">❤️ <span id="like-bab8">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab8" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab8')">Kirim</button>
-    <div id="comments-list-bab8"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('bab7')">← Previous Chapter</div>
-    <div class="btn" onclick="openSection('bab9')">Next Chapter →</div>
-  </div>
-</section>
-
-<section id="bab9">
-  <h1>Bab 9 — Lingkaran Terakhir</h1>
-  <p>Climax cerita, pertaruhan tinggi, misteri besar terungkap, romance mencapai puncak...</p>
-  <div class="like-btn" onclick="toggleLike('bab9')">❤️ <span id="like-bab9">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab9" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab9')">Kirim</button>
-    <div id="comments-list-bab9"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('bab8')">← Previous Chapter</div>
-    <div class="btn" onclick="openSection('bab10')">Next Chapter →</div>
-  </div>
-</section>
-
-<section id="bab10">
-  <h1>Bab 10 — Kembali dari Malam</h1>
-  <p>Epilog: konsekuensi, penutupan romance, dunia, Circle, dan Gereja...</p>
-  <div class="like-btn" onclick="toggleLike('bab10')">❤️ <span id="like-bab10">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab10" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab10')">Kirim</button>
-    <div id="comments-list-bab10"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:30px;">
-    <div class="btn" onclick="openSection('bab9')">← Previous Chapter</div>
-    <div class="btn" onclick="openSection('arsip')">Back to Arsip</div>
-  </div>
-</section>
+  // BAB CHAPTERS
+  for(let j=1;j<=chaptersPerBab[i-1];j++){
+    document.write(`
+    <section id="bab${i}-ch${j}">
+      <h2>Bab ${i} — Chapter ${j}</h2>
+      <p>Isi cerita Bab ${i}, Chapter ${j}...</p>
+      <div class="like-btn" onclick="toggleLike('bab${i}-ch${j}')">❤️ <span id="like-bab${i}-ch${j}">0</span></div>
+      <div class="comment-section">
+        <h3>Komentar:</h3>
+        <textarea id="comment-bab${i}-ch${j}" placeholder="Tulis komentar..."></textarea>
+        <button onclick="addComment('bab${i}-ch${j}')">Kirim</button>
+        <div id="comments-list-bab${i}-ch${j}"></div>
+      </div>
+      <div style="display:flex; justify-content:space-between; margin-top:20px;">
+        <div class="btn" onclick="openChapter('bab${i}','bab${i}-ch${j-1>0?j-1:'arsip'}')">← Previous Chapter</div>
+        <div class="btn" onclick="openChapter('bab${i}','bab${i}-ch${j+1<=chaptersPerBab[i-1]?j+1:'arsip'}')">Next Chapter →</div>
+      </div>
+    </section>
+    `);
+  }
+}
+</script>
 
 <script>
 // NAVIGATION
@@ -235,6 +106,7 @@ function openSection(id){
   document.getElementById(id).style.display="block";
   window.scrollTo(0,0);
 }
+function openChapter(bab,chapter){ openSection(chapter); }
 
 // PROGRESS BAR
 window.onscroll=function(){
