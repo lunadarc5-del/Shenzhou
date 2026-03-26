@@ -23,6 +23,7 @@ h1,h2 { text-align:center; }
 .comment-section button { padding:6px 14px; margin-top:5px; background:#2a1f3a; color:white; border:none; cursor:pointer; border-radius:4px; }
 .comment-section button:hover { background:#3a2a55; }
 .like-btn { margin-top:10px; cursor:pointer; font-size:16px; display:inline-block; }
+.author { margin-top:10px; font-style:italic; opacity:0.7; }
 </style>
 </head>
 <body>
@@ -34,6 +35,7 @@ h1,h2 { text-align:center; }
   <div class="hero">
     <h1>Chronicles of the Ninth Circle</h1>
     <h2>A Victorian Gothic Occult Romance</h2>
+    <p class="author">Penulis: Ade Angga Pratama (Shenzhou)</p>
     <p><strong>Genre:</strong> Victorian Gothic • Occult • Mystery • Romance</p>
     <p><strong>Sinopsis (ID):</strong><br>
       Lucien, seorang pemuda biasa, hidupnya berakhir tiba-tiba dalam sebuah kecelakaan. Ia terbangun di dunia baru, dalam tubuh bangsawan muda dan menerima Circle 9 — Jalur Malam yang menguasai kesunyian. Bersamaan dengan kebangkitan jalur ini, sesuatu yang lebih tua dan lebih berbahaya juga bangkit. Di tengah intrik aristokrat, pengawasan Gereja, dan misteri yang menanti untuk dipecahkan, Lucien harus menemukan jalan hidup barunya—sementara hati dan romansa mulai tumbuh perlahan.
@@ -63,20 +65,18 @@ h1,h2 { text-align:center; }
   <div class="back" onclick="openSection('landing')">Kembali ke Landing</div>
 </section>
 
-<!-- LOOP: 10 BAB -->
+<!-- GENERATE BAB & CHAPTER -->
 <script>
 const totalBab=10;
-const chaptersPerBab=[3,4,3,2,3,3,2,2,3,3]; // contoh jumlah chapter tiap bab
+const chaptersPerBab=[3,4,3,2,3,3,2,2,3,3]; // jumlah chapter tiap bab
 
 for(let i=1;i<=totalBab;i++){
-  // BAB SECTION
   document.write(`<section id="bab${i}"><h1>Bab ${i}</h1><div class="chapter-sublist">`);
   for(let j=1;j<=chaptersPerBab[i-1];j++){
     document.write(`<a onclick="openChapter('bab${i}','bab${i}-ch${j}')">Chapter ${j}</a>`);
   }
   document.write(`</div><div class="back" onclick="openSection('arsip')">← Kembali ke Arsip Bab</div></section>`);
 
-  // BAB CHAPTERS
   for(let j=1;j<=chaptersPerBab[i-1];j++){
     document.write(`
     <section id="bab${i}-ch${j}">
