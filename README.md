@@ -3,159 +3,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Novelku</title>
+<title>Circle IX — Jalur Malam</title>
+
 <style>
-body {
-    font-family: 'Georgia', serif;
-    background-color: #fdf6e3;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s, color 0.3s;
+body{
+  margin:0;
+  background:#0f0f12;
+  color:#d6d8e0;
+  font-family:Georgia, serif;
+  line-height:1.9;
 }
-body.dark {
-    background-color: #1e1e1e;
-    color: #ddd;
+
+section{
+  display:none;
+  padding:60px 20px;
+  max-width:750px;
+  margin:auto;
 }
-header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #eee8d5;
-    transition: background-color 0.3s;
+
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(#0f0f12,#1a1c22);
 }
-body.dark header { background-color: #2c2c2c; }
-main { max-width: 600px; margin: 2rem auto; padding: 1rem; }
-.chapter { display: none; opacity: 0; transition: opacity 0.5s; }
-.chapter.active { display: block; opacity: 1; }
-.navigation { margin-top: 2rem; display: flex; justify-content: space-between; }
-.navigation button { padding: 0.5rem 1rem; font-size: 1rem; cursor: pointer; background-color: #2a7ae2; color: white; border: none; border-radius: 5px; transition: background-color 0.3s; }
-.navigation button:hover { background-color: #1f5bb5; }
-.bookmark { margin-top: 1rem; display: flex; justify-content: space-between; align-items: center; }
-.bookmark button { padding: 0.3rem 0.8rem; font-size: 0.9rem; cursor: pointer; background-color: #e27a2a; color: white; border: none; border-radius: 5px; transition: background-color 0.3s; }
-.bookmark button:hover { background-color: #b55f20; }
-.chapter-list { margin: 1rem 0; }
-.chapter-list button { display: block; width: 100%; padding: 0.5rem; margin: 0.2rem 0; text-align: left; cursor: pointer; border: 1px solid #ccc; border-radius: 5px; background-color: #fff; transition: background-color 0.3s; }
-.chapter-list button:hover { background-color: #eee; }
-body.dark .chapter-list button { background-color: #333; color: #ddd; border-color: #555; }
-body.dark .chapter-list button:hover { background-color: #444; }
-.feedback { margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem; }
-.feedback textarea { width: 100%; height: 60px; padding: 0.5rem; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; }
-.feedback button { margin-top: 0.5rem; padding: 0.5rem 1rem; font-size: 1rem; cursor: pointer; background-color: #2a7ae2; color: white; border: none; border-radius: 5px; transition: background-color 0.3s; }
-.feedback button:hover { background-color: #1f5bb5; }
+
+.hero h1{
+  font-size:48px;
+  letter-spacing:6px;
+  margin:0;
+  color:#c9ccd6;
+}
+
+.hero h2{
+  margin-top:10px;
+  font-size:22px;
+  color:#8a8fa3;
+}
+
+.quote{
+  margin-top:25px;
+  font-style:italic;
+  opacity:0.7;
+}
+
+.btn{
+  margin-top:35px;
+  padding:12px 28px;
+  background:#2a1f3a;
+  color:white;
+  text-decoration:none;
+  cursor:pointer;
+  display:inline-block;
+}
+
+.btn:hover{
+  background:#3a2a55;
+}
+
+.chapter-list a{
+  display:block;
+  margin:15px 0;
+  text-decoration:none;
+  color:#d6d8e0;
+  border-bottom:1px solid #333;
+  padding-bottom:8px;
+}
+
+.chapter-list a:hover{
+  color:white;
+  border-color:#6d5cae;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.back{
+  margin-top:60px;
+  text-align:center;
+  opacity:0.6;
+  cursor:pointer;
+}
+
+.progress{
+  position:fixed;
+  top:0;
+  left:0;
+  height:3px;
+  background:#6d5cae;
+  width:0%;
+}
 </style>
 </head>
+
 <body>
-<header>
-<h1>Judul Novelku</h1>
-<p>Baca bab demi bab di sini</p>
-<button id="toggleDark">🌙 Mode Malam</button>
-</header>
-<main>
-<!-- Daftar Bab -->
-<div class="chapter-list">
-    <button onclick="goChapter(0)">Bab 1: Awal Cerita</button>
-    <button onclick="goChapter(1)">Bab 2: Konflik</button>
-    <button onclick="goChapter(2)">Bab 3: Puncak Cerita</button>
-</div>
 
-<!-- Bab 1 -->
-<div class="chapter active" id="chapter1">
-<h2>Bab 1: Awal Cerita</h2>
-<p>Ini adalah awal ceritaku. Tulis ceritamu di sini...</p>
-</div>
+<div class="progress" id="progressBar"></div>
 
-<!-- Bab 2 -->
-<div class="chapter" id="chapter2">
-<h2>Bab 2: Konflik</h2>
-<p>Bab kedua mulai menampilkan konflik cerita...</p>
-</div>
+<!-- LANDING -->
+<section id="landing" style="display:block;">
+  <div class="hero">
+    <h1>CIRCLE IX</h1>
+    <h2>Jalur Malam</h2>
+    <p class="quote">“Sunyi bukan ketiadaan suara.”</p>
+    <div class="btn" onclick="openSection('arsip')">Mulai Membaca</div>
+  </div>
+</section>
 
-<!-- Bab 3 -->
-<div class="chapter" id="chapter3">
-<h2>Bab 3: Puncak Cerita</h2>
-<p>Di bab ini, cerita mencapai puncaknya...</p>
-</div>
+<!-- ARSIP -->
+<section id="arsip">
+  <h1>BAB I — Circle 9: Jalur Malam</h1>
 
-<!-- Navigasi dan Bookmark -->
-<div class="navigation">
-    <button id="prevBtn">← Sebelumnya</button>
-    <button id="nextBtn">Selanjutnya →</button>
-</div>
-<div class="bookmark">
-    <span id="bookmarkStatus">Tidak ada bookmark</span>
-    <button id="bookmarkBtn">⭐ Bookmark Bab Ini</button>
-</div>
+  <div class="chapter-list">
+    <a onclick="openSection('ch1')">Chapter 1 — Dentang di Ruang Sunyi</a>
+    <a onclick="openSection('ch2')">Chapter 2 — Retakan Stabilitas</a>
+  </div>
 
-<!-- Feedback Form -->
-<div class="feedback">
-<h3>Kirim Komentar / Saran</h3>
-<textarea id="feedbackText" placeholder="Tulis komentarmu..."></textarea>
-<button id="sendFeedback">Kirim</button>
-</div>
-</main>
+  <div class="back" onclick="openSection('landing')">Kembali</div>
+</section>
+
+<!-- CHAPTER 1 -->
+<section id="ch1">
+  <h1>Chapter 1 — Dentang di Ruang Sunyi</h1>
+
+  <p>Langit pecah dalam satu kilatan cahaya.</p>
+  <p>Logam saling menghantam. Orang-orang berteriak.</p>
+  <p>Lalu semuanya gelap.</p>
+
+  <p>Lucien tidak merasakan sakit. Hanya rasa jatuh yang panjang.</p>
+
+  <p>.....</p>
+
+  <p>Ia membuka mata.</p>
+  <p>Langit-langit kamar putih pucat menyambutnya.</p>
+
+  <p>Lucien D’Armont.</p>
+  <p>Circle 9. Jalur Malam.</p>
+
+  <p>Namun bayangannya bergerak sepersekian detik lebih lambat.</p>
+
+  <div class="back" onclick="openSection('arsip')">Kembali ke Arsip</div>
+</section>
+
+<!-- CHAPTER 2 -->
+<section id="ch2">
+  <h1>Chapter 2 — Retakan Stabilitas</h1>
+
+  <p>Malam turun tanpa suara.</p>
+
+  <p>Lucien berdiri di balkon kediaman D’Armont. Kota Funia tampak tenang, terlalu tenang.</p>
+
+  <p>Ia mencoba memperluas radius sunyinya.</p>
+
+  <p>Udara di sekelilingnya menekan. Tidak goyah. Stabil.</p>
+
+  <p>Namun bayangan di kakinya—tidak mengikuti cahaya bulan.</p>
+
+  <p>Untuk sesaat, bayangan itu memanjang ke arah yang berlawanan.</p>
+
+  <p>Bukan efek Jalur Malam.</p>
+
+  <p>Sesuatu yang lain.</p>
+
+  <p>Lebih dalam dari Circle.</p>
+
+  <div class="back" onclick="openSection('arsip')">Kembali ke Arsip</div>
+</section>
 
 <script>
-const chapters = ["chapter1","chapter2","chapter3"];
-let current = 0;
-
-const showChapter = index=>{
-    chapters.forEach((id,i)=>{
-        const el = document.getElementById(id);
-        if(i===index){
-            el.classList.add("active");
-            setTimeout(()=>el.style.opacity="1",50);
-        } else {
-            el.style.opacity="0";
-            setTimeout(()=>el.classList.remove("active"),500);
-        }
-    });
-    updateBookmarkStatus();
-    localStorage.setItem("lastChapter",index);
-};
-
-// Navigasi tombol
-document.getElementById("prevBtn").addEventListener("click",()=>{
-    if(current>0){ current--; showChapter(current); }
-});
-document.getElementById("nextBtn").addEventListener("click",()=>{
-    if(current<chapters.length-1){ current++; showChapter(current); }
-});
-
-// Lompat bab
-function goChapter(index){ current=index; showChapter(current); }
-
-// Mode Malam
-const body=document.body;
-document.getElementById("toggleDark").addEventListener("click",()=>body.classList.toggle("dark"));
-
-// Bookmark
-const bookmarkBtn=document.getElementById("bookmarkBtn");
-const bookmarkStatus=document.getElementById("bookmarkStatus");
-function updateBookmarkStatus(){
-    const saved=localStorage.getItem("bookmark");
-    bookmarkStatus.textContent=(saved==current)?"Bab ini di-bookmark ⭐":"Tidak ada bookmark";
+function openSection(id){
+  document.querySelectorAll("section").forEach(sec=>sec.style.display="none");
+  document.getElementById(id).style.display="block";
+  window.scrollTo(0,0);
 }
-bookmarkBtn.addEventListener("click",()=>{
-    localStorage.setItem("bookmark",current);
-    updateBookmarkStatus();
-});
 
-// Muat bab terakhir
-window.addEventListener("load",()=>{
-    const last=localStorage.getItem("lastChapter");
-    if(last!==null){ current=parseInt(last); showChapter(current); }
-});
-
-// Feedback
-const feedbackText=document.getElementById("feedbackText");
-document.getElementById("sendFeedback").addEventListener("click",()=>{
-    if(feedbackText.value.trim()!==""){
-        alert("Terima kasih atas komentarmu!");
-        feedbackText.value="";
-    }else{
-        alert("Tulis komentar terlebih dahulu!");
-    }
-});
+window.onscroll=function(){
+  let winScroll=document.body.scrollTop||document.documentElement.scrollTop;
+  let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  let scrolled=(winScroll/height)*100;
+  document.getElementById("progressBar").style.width=scrolled+"%";
+};
 </script>
+
 </body>
 </html>
