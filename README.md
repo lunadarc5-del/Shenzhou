@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -154,13 +154,6 @@ function addComment(id){
   localStorage.setItem('comments-'+id, container.innerHTML);
 }
 </script>
-
-</body>
-</html>
-
-<footer>
-  <p>© 2026 Shenzhou | Circle 9 Novel</p>
-</footer>
 
 </body>
 </html>
