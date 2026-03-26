@@ -1,5 +1,4 @@
 
-
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -66,252 +65,280 @@ h1,h2 { text-align:center; }
   <div class="back" onclick="openSection('landing')">Kembali ke Landing</div>
 </section>
 
-<!-- BAB 1 -->
-<section id="bab1">
-  <h1>Bab 1 — Circle 9: Jalur Malam</h1>
-  <div class="chapter-sublist">
-    <a onclick="openChapter('bab1','bab1-ch1')">Chapter 1</a>
-    <a onclick="openChapter('bab1','bab1-ch2')">Chapter 2</a>
-    <a onclick="openChapter('bab1','bab1-ch3')">Chapter 3</a>
-  </div>
-  <div class="back" onclick="openSection('arsip')">← Kembali ke Arsip Bab</div>
-</section>
-
-<!-- BAB 1 CHAPTER 1 -->
-<section id="bab1-ch1">
-  <h2>Bab 1 — Chapter 1</h2>
-  <p>
-Langit pecah dalam satu kilatan cahaya.<br><br>
-
-Logam saling menghantam. Orang-orang berteriak. Lalu semuanya gelap.<br><br>
-
-Lucien tidak merasakan sakit. Hanya rasa jatuh yang panjang, seolah tubuhnya terlepas dari dunia.<br><br>
-
-Ia ingin membuka mata. Namun tidak ada cahaya. Tidak ada suara. Tidak ada apa-apa.<br><br>
-
-.....<br><br>
-
-Sebuah dentang terdengar pelan.<br><br>
-
-Ia membuka mata. Langit-langit kamar berwarna putih pucat. Lampu gantung kecil menyala redup. Udara terasa dingin dan bersih—berbeda dari kabin pesawat yang sesak dan penuh bau logam terbakar.<br><br>
-
-Ia menarik napas dalam. Tidak ada asap. Tidak ada kepanikan.<br><br>
-
-Ia bangkit perlahan dari tempat tidur besar. Jemarinya menyentuh seprai yang rapi dan halus.<br><br>
-
-Ia melihat tangannya sendiri. Kulitnya lebih pucat. Jarinya lebih panjang. Urat-uratnya tipis dan teratur.<br><br>
-
-Bukan tangannya.<br><br>
-
-Ia turun dari tempat tidur. Kakinya menyentuh lantai marmer. Tidak ada suara. Ia melangkah sekali lagi. Tetap sunyi.<br><br>
-
-Bukan karena ruangan itu hening—<br>
-melainkan karena dunia tidak memberi gema atas langkahnya.<br><br>
-
-Lucien berjalan ke arah cermin.<br><br>
-
-Seorang pemuda menatapnya dari balik kaca. Rambut hitam tersisir rapi. Wajah muda dengan garis lembut bangsawan. Mata abu-abu yang terlalu tenang untuk seseorang yang baru saja mati.<br><br>
-
-Sebuah nama muncul perlahan di benaknya.<br><br>
-
-<em>Lucien D’Armont.</em><br><br>
-
-Ingatan yang bukan miliknya mengalir, rapi dan tertata. Putra kedua keluarga D’Armont. Kota Funia. Baru saja menjalani ritual penerimaan Circle.<br><br>
-
-Ia terdiam cukup lama.<br><br>
-
-<em>Lucien:</em> “Aku mati… dan bangun di sini.”<br><br>
-
-Ia meraih gelas kecil di atas meja, lalu menjatuhkannya dengan sengaja. Gelas itu menyentuh lantai marmer. Tanpa denting.<br><br>
-
-Hening yang sama seperti saat ia membuka mata.<br><br>
-
-Sebuah pemahaman muncul.<br><br>
-
-<em>Circle 9 – Jalur Malam (Silent).</em><br><br>
-
-Tingkatan kekuatan bagi para Arkanis. Setiap manusia yang menjalani ritual hanya dapat menerima satu jalur. Semakin tinggi tingkatnya, semakin besar tekanan pada pikiran.<br><br>
-
-Jika gagal—mereka kehilangan kewarasan.<br><br>
-
-Tubuh ini berhasil. Circle 9 – Jalur Malam (Silent).<br><br>
-
-Kemampuannya sederhana. Meredam suara. Menghapus gema.<br><br>
-
-Ia memusatkan pikiran. Radius sunyi itu melebar tipis di sekelilingnya. Ia mencoba menariknya kembali. Sunyi itu menyusut. Stabil. Terkendali.<br><br>
-
-Namun—<br><br>
-
-Bayangannya di cermin bergerak sepersekian detik lebih lambat.<br><br>
-
-Lucien membeku. Ia mengangkat tangan. Bayangan mengikuti. Tepat. Seolah tidak pernah ada keterlambatan.<br><br>
-
-Hening. Ia menatap matanya sendiri. Ada sesuatu yang tidak berasal dari Jalur Malam (Silent). Sesuatu yang tidak tercatat dalam sistem Circle.<br><br>
-
-.....<br><br>
-
-Ketukan terdengar di pintu.<br><br>
-
-<em>Lucien:</em>“Tuan muda.”<br><br>
-
-<em>Lucien:</em>“Masuk.”<br><br>
-
-Dua orang dari Gereja Malam Tanpa Bintang memasuki ruangan.<br><br>
-
-Uskup Aldric Mourne berdiri tegak dalam jubah hitam tanpa ornamen. Tatapannya tajam dan penuh pengukuran.<br><br>
-
-Di sampingnya, Sister Mirella Vance membuka buku catatan kecil.<br><br>
-
-<em>Aldric:</em> “Ritual berjalan lancar. Namun stabilitas tetap harus diperiksa. Bagaimana perasaanmu, Lucien?”<br><br>
-
-<em>Lucien:</em> “Tubuh saya… stabil. Tidak ada distorsi.”<br><br>
-
-<em>Mirella:</em> “Resonansi juga stabil, Tuan muda. Tapi jalur ini… bisa rapuh. Anda harus berhati-hati.”<br><br>
-
-<em>Lucien:</em> “Aku mengerti. Tapi aku merasa… ada sesuatu yang lain.”<br><br>
-
-<em>Aldric:</em> (menatap tajam) “Hati-hati dengan perasaan itu. Jalur Malam (Silent) menuntut kesabaran. Terlalu cepat menafsirkan bisa berbahaya.”<br><br>
-
-Sebelum pergi, Aldric berhenti sejenak.<br><br>
-
-<em>Aldric:</em> “Gereja selalu mengawasi mereka yang bangun dari malam. Ingat itu.”<br><br>
-
-Pintu tertutup.<br><br>
-
-Sore itu, teriakan terdengar dari arah pelabuhan.<br><br>
-
-Seorang Arkanis muda terjatuh di jalan berbatu.<br><br>
-
-<em>Arkanis muda:</em> “Aku bisa… aku bisa…”<br><br>
-
-Lingkaran samar menyala di bawah kakinya. Udara di sekelilingnya bergetar. Bayangannya memanjang tidak wajar.<br><br>
-
-Orang-orang mundur.<br><br>
-
-<em>Orang-orang:</em>“Dissonan!”<br><br>
-
-Lucien berdiri tidak jauh dari sana. Mengamati. Menghitung risiko.<br><br>
-
-Tubuh Arkanis itu bergetar hebat. Lingkaran cahaya di bawahnya retak. Dan untuk satu detik—suara di seluruh pelabuhan lenyap.<br><br>
-
-Bukan karena kemampuan Lucien. Lebih luas dari itu. Seolah dunia sendiri berhenti bernapas.<br><br>
-
-Lucien merasakannya. Di dalam dirinya, sesuatu menjawab. Bukan Jalur Malam (Silent). Lebih dalam. Lebih tua.<br><br>
-
-Lingkaran di kaki Arkanis itu padam. Ia ambruk. Suara kembali. Orang-orang berteriak. Gereja datang.<br><br>
-
-Lucien tetap berdiri. Wajahnya tenang.<br><br>
-
-Namun untuk pertama kalinya sejak ia bangun—ia tahu.<br><br>
-Ia tidak hanya membawa Circle 9 – Jalur Malam (Silent).<br>
-Dan sesuatu di dalam dirinya telah bangkit bersamaan dengan dirinya.
-  </p>
-  <div class="like-btn" onclick="toggleLike('bab1-ch1')">❤️ <span id="like-bab1-ch1">0</span></div>
-  <div class="comment  <h3>Komentar:</h3>
-    <textarea id="comment-bab1-ch1" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab1-ch1')">Kirim</button>
-    <div id="comments-list-bab1-ch1"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:20px;">
-    <div class="btn" onclick="openChapter('bab1','arsip')">← Previous Chapter</div>
-    <div class="btn" onclick="openChapter('bab1','bab1-ch2')">Next Chapter →</div>
-  </div>
-</section>
-
-<!-- BAB 1 CHAPTER 2 -->
-<section id="bab1-ch2">
-  <h2>Bab 1 — Chapter 2</h2>
-  <p>
-Malam jatuh di Funia. Lampu gas dan obor pelabuhan berkelip di kejauhan.<br><br>
-
-Dari balkon kamarnya, Lucien menatap jalan-jalan kota yang sepi.<br><br>
-
-<em>Lucien:</em> “Tenang… terlalu tenang.”<br><br>
-
-Funia selalu terlihat damai malam hari. Tapi di bawah kedamaian itu, ada keseimbangan rapuh—bangsawan, Gereja, Arkanis. Setiap langkah salah, bisa memicu Dissonan.<br><br>
-
-Lucien menutup mata. Ia memusatkan pikiran.<br>
-Sunyi menyebar dari dirinya, seperti biasa. Tapi ada sesuatu… ada getaran halus di bawah sunyi itu.<br>
-Seolah dunia di sekelilingnya menahan napas.<br><br>
-
-Ia membuka mata dan menatap meja kerja. Sebuah kotak kayu kecil tersimpan rapi—relik keluarga D’Armont, Circle 9.<br><br>
-
-<em>Lucien:</em> “Apa ini…?”<br><br>
-
-Begitu jarinya hampir menyentuh kotak, tubuhnya bereaksi. Getaran halus merambat, menilai.<br>
-Lucien mundur satu langkah.<br><br>
-
-<em>Lucien:</em> “Menilai aku?”<br>
-(dengan nada setengah tersenyum)<br><br>
-
-Ia duduk, menatap kotak dari dekat.<br>
-Sunyi mengalir di sekelilingnya. Tapi di dalamnya, sesuatu lain juga bergerak. Sesuatu yang lebih tua, lebih tua dari Circle, lebih tua dari Gereja.<br><br>
-
-Lucien menepuk meja.<br><br>
-
-<em>Lucien:</em> “Baik… mari kita lihat seberapa jauh kau bisa bawa aku.”<br><br>
-
-Kotak bergetar sedikit. Cahaya samar memantul di dinding. Lucien menahan napas.<br><br>
-
-<em>Suara:</em> “Bangkit.”<br><br>
-
-Lucien menatap kotak, menatap mata yang seakan hidup di kayu itu.<br><br>
-
-<em>Lucien:</em> “Bangkit… oke. Aku lihat dulu.”<br><br>
-
-Ia menempatkan kedua tangan di atas kotak. Sunyi mengalir keluar, menenangkan. Tapi di dalam ketenangan itu, sesuatu lain juga bangkit. Lebih tua, lebih besar dari Circle.<br><br>
-
-Lampu di balkon bergetar sebentar. Riak energi muncul di udara. Lucien menunduk, fokus.<br><br>
-
-<em>Lucien:</em> “Diam… tunggu… jangan salah langkah.”<br><br>
-
-Ia menarik napas panjang.<br><br>
-
-<em>Lucien:</em> “Biar kubuat percobaan kecil.”<br><br>
-
-Lucien memutar relik perlahan, jari-jarinya menyentuh ukiran halus.<br><br>
-
-<em>Lucien:</em> “Kalau aku cuma sentuh ringan, apa yang terjadi?”<br><br>
-
-Cahaya samar muncul di permukaan relik. Tangannya sedikit panas.<br><br>
-
-<em>Lucien:</em> “Ah… iya, ada respon.”<br><br>
-
-Ia mencoba menarik sunyi sedikit lebih jauh, memperluas radiusnya.<br>
-Lingkungan di kamar tetap diam. Tapi kotak bergetar lebih kuat.<br><br>
-
-<em>Lucien:</em> “Ini… bukan sekadar jalur Malam (Silent). Ini sesuatu… lain.”<br><br>
-
-Ia menutup mata, menenangkan pikiran. Detak jantungnya perlahan. Ia merasakan ritme yang stabil—aneh, tapi stabil.<br><br>
-
-<em>Lucien:</em> “Stabilitas aneh… tapi sesuai.”<br><br>
-
-Ia membuka mata. Lampu di kamar kembali normal. Relik tetap di sana, sunyi. Tapi ada sesuatu di dalam dirinya… perlahan, mulai bangkit.
-  </p>
-  <div class="like-btn" onclick="toggleLike('bab1-ch2')">❤️ <span id="like-bab1-ch2">0</span></div>
-  <div class="comment-section">
-    <h3>Komentar:</h3>
-    <textarea id="comment-bab1-ch2" placeholder="Tulis komentar..."></textarea>
-    <button onclick="addComment('bab1-ch2')">Kirim</button>
-    <div id="comments-list-bab1-ch2"></div>
-  </div>
-  <div style="display:flex; justify-content:space-between; margin-top:20px;">
-    <div class="btn" onclick="openChapter('bab1','bab1-ch1')">← Previous Chapter</div>
-    <div class="btn" onclick="openChapter('bab1','bab1-ch3')">Next Chapter →</div>
-  </div>
-</section>
-
-<!-- BAB 1 CHAPTER 3 Placeholder -->
-<section id="bab1-ch3">
-  <h2>Bab 1 — Chapter 3</h2>
-  <p>Chapter 3 akan segera hadir.</p>
-</section>
-
-<!-- Script -->
+<!-- GENERATE BAB & CHAPTER -->
 <script>
+const totalBab=10;
+const chaptersPerBab=[3,4,3,2,3,3,2,2,3,3]; // jumlah chapter tiap bab
+
+for(let i=1;i<=totalBab;i++){
+  document.write(`<section id="bab${i}"><h1>Bab ${i}</h1><div class="chapter-sublist">`);
+  for(let j=1;j<=chaptersPerBab[i-1];j++){
+    document.write(`<a onclick="openChapter('bab${i}','bab${i}-ch${j}')">Chapter ${j}</a>`);
+  }
+  document.write(`</div><div class="back" onclick="openSection('arsip')">← Kembali ke Arsip Bab</div></section>`);
+
+  for(let j=1;j<=chaptersPerBab[i-1];j++){
+    document.write(`<section id="bab${i}-ch${j}">
+      <h2>Bab ${i} — Chapter ${j}</h2>
+      <p>`);
+
+    // Masukkan chapter 1 & 2 sesuai teks yang dikirim
+    if(i===1 && j===1){
+      document.write(`Langit pecah dalam satu kilatan cahaya.
+
+Logam saling menghantam. Orang-orang berteriak. Lalu semuanya gelap.
+
+Lucien tidak merasakan sakit. Hanya rasa jatuh yang panjang, seolah tubuhnya terlepas dari dunia.
+
+Ia ingin membuka mata. Namun tidak ada cahaya. Tidak ada suara. Tidak ada apa-apa.
+
+.....
+
+Sebuah dentang terdengar pelan.
+
+Ia membuka mata. Langit-langit kamar berwarna putih pucat. Lampu gantung kecil menyala redup. Udara terasa dingin dan bersih—berbeda dari kabin pesawat yang sesak dan penuh bau logam terbakar.
+
+Ia menarik napas dalam. Tidak ada asap. Tidak ada kepanikan.
+
+Ia bangkit perlahan dari tempat tidur besar. Jemarinya menyentuh seprai yang rapi dan halus.
+
+Ia melihat tangannya sendiri. Kulitnya lebih pucat. Jarinya lebih panjang. Urat-uratnya tipis dan teratur.
+
+Bukan tangannya.
+
+Ia turun dari tempat tidur. Kakinya menyentuh lantai marmer. Tidak ada suara. Ia melangkah sekali lagi. Tetap sunyi.
+
+Bukan karena ruangan itu hening—melainkan karena dunia tidak memberi gema atas langkahnya.
+
+Lucien berjalan ke arah cermin.
+
+Seorang pemuda menatapnya dari balik kaca. Rambut hitam tersisir rapi. Wajah muda dengan garis lembut bangsawan. Mata abu-abu yang terlalu tenang untuk seseorang yang baru saja mati.
+
+Sebuah nama muncul perlahan di benaknya.
+
+*Lucien D’Armont.*
+
+Ingatan yang bukan miliknya mengalir, rapi dan tertata. Putra kedua keluarga D’Armont. Kota Funia. Baru saja menjalani ritual penerimaan Circle.
+
+Ia terdiam cukup lama.
+
+*Lucien:* “Aku mati… dan bangun di sini.”
+
+Ia meraih gelas kecil di atas meja, lalu menjatuhkannya dengan sengaja. Gelas itu menyentuh lantai marmer. Tanpa denting.
+
+Hening yang sama seperti saat ia membuka mata.
+
+Sebuah pemahaman muncul.
+
+*Circle 9 – Jalur Malam (Silent).*
+
+Tingkatan kekuatan bagi para Arkanis. Setiap manusia yang menjalani ritual hanya dapat menerima satu jalur. Semakin tinggi tingkatnya, semakin besar tekanan pada pikiran.
+
+Jika gagal—mereka kehilangan kewarasan.
+
+Tubuh ini berhasil. Circle 9 – Jalur Malam (Silent).
+
+Kemampuannya sederhana. Meredam suara. Menghapus gema.
+
+Ia memusatkan pikiran. Radius sunyi itu melebar tipis di sekelilingnya. Ia mencoba menariknya kembali. Sunyi itu menyusut. Stabil. Terkendali.
+
+Namun—
+
+Bayangannya di cermin bergerak sepersekian detik lebih lambat.
+
+Lucien membeku. Ia mengangkat tangan. Bayangan mengikuti. Tepat. Seolah tidak pernah ada keterlambatan.
+
+Hening. Ia menatap matanya sendiri. Ada sesuatu yang tidak berasal dari Jalur Malam (Silent). Sesuatu yang tidak tercatat dalam sistem Circle.
+
+.....
+
+Ketukan terdengar di pintu.
+
+*Lucien:*“Tuan muda.”
+
+*Lucien:*“Masuk.”
+
+Dua orang dari Gereja Malam Tanpa Bintang memasuki ruangan.
+
+Uskup Aldric Mourne berdiri tegak dalam jubah hitam tanpa ornamen. Tatapannya tajam dan penuh pengukuran.
+
+Di sampingnya, Sister Mirella Vance membuka buku catatan kecil.
+
+*Aldric:* “Ritual berjalan lancar. Namun stabilitas tetap harus diperiksa. Bagaimana perasaanmu, Lucien?”
+
+*Lucien:* “Tubuh saya… stabil. Tidak ada distorsi.”
+
+*Mirella:* “Resonansi juga stabil, Tuan muda. Tapi jalur ini… bisa rapuh. Anda harus berhati-hati.”
+
+*Lucien:* “Aku mengerti. Tapi aku merasa… ada sesuatu yang lain.”
+
+*Aldric:* (menatap tajam) “Hati-hati dengan perasaan itu. Jalur Malam (Silent) menuntut kesabaran. Terlalu cepat menafsirkan bisa berbahaya.”
+
+Sebelum pergi, Aldric berhenti sejenak.
+
+*Aldric:* “Gereja selalu mengawasi mereka yang bangun dari malam. Ingat itu.”
+
+Pintu tertutup.
+
+Sore itu, teriakan terdengar dari arah pelabuhan.
+
+Seorang Arkanis muda terjatuh di jalan berbatu.
+
+*Arkanis muda:* “Aku bisa… aku bisa…”
+
+Lingkaran samar menyala di bawah kakinya. Udara di sekelilingnya bergetar. Bayangannya memanjang tidak wajar.
+
+Orang-orang mundur.
+
+*Orang-orang:*“Dissonan!”
+
+Lucien berdiri tidak jauh dari sana. Mengamati. Menghitung risiko.
+
+Tubuh Arkanis itu bergetar hebat. Lingkaran cahaya di bawahnya retak. Dan untuk satu detik—suara di seluruh pelabuhan lenyap.
+
+Bukan karena kemampuan Lucien. Lebih luas dari itu. Seolah dunia sendiri berhenti bernapas.
+
+Lucien merasakannya. Di dalam dirinya, sesuatu menjawab. Bukan Jalur Malam (Silent). Lebih dalam. Lebih tua.
+
+Lingkaran di kaki Arkanis itu padam. Ia ambruk. Suara kembali. Orang-orang berteriak. Gereja datang.
+
+Lucien tetap berdiri. Wajahnya tenang.
+
+Namun untuk pertama kalinya sejak ia bangun—ia tahu.
+Ia tidak hanya membawa Circle 9 – Jalur Malam (Silent).
+Dan sesuatu di dalam dirinya telah bangkit bersamaan dengan dirinya.`);
+    } else if(i===1 && j===2){
+      document.write(`Malam jatuh di Funia. Lampu gas dan obor pelabuhan berkelip di kejauhan.
+
+Dari balkon kamarnya, Lucien menatap jalan-jalan kota yang sepi.
+
+*Lucien:* “Tenang… terlalu tenang.”
+
+Funia selalu terlihat damai malam hari. Tapi di bawah kedamaian itu, ada keseimbangan rapuh—bangsawan, Gereja, Arkanis. Setiap langkah salah, bisa memicu Dissonan.
+
+Lucien menutup mata. Ia memusatkan pikiran.
+Sunyi menyebar dari dirinya, seperti biasa. Tapi ada sesuatu… ada getaran halus di bawah sunyi itu.
+Seolah dunia di sekelilingnya menahan napas.
+
+Ia membuka mata dan menatap meja kerja. Sebuah kotak kayu kecil tersimpan rapi—relik keluarga D’Armont, Circle 9.
+
+Lucien melangkah mendekat. Jari-jari tangannya terulur.
+
+*Lucien:* “Apa ini…?”
+
+Begitu jarinya hampir menyentuh kotak, tubuhnya bereaksi. Getaran halus merambat, menilai.
+Lucien mundur satu langkah.
+
+*Lucien:* “Menilai aku?”
+(dengan nada setengah tersenyum)
+
+Ia duduk, menatap kotak dari dekat.
+Sunyi mengalir di sekelilingnya. Tapi di dalamnya, sesuatu lain juga bergerak. Sesuatu yang lebih tua, lebih tua dari Circle, lebih tua dari Gereja.
+
+Lucien menepuk meja.
+
+*Lucien:* “Baik… mari kita lihat seberapa jauh kau bisa bawa aku.”
+
+Kotak bergetar sedikit. Cahaya samar memantul di dinding. Lucien menahan napas.
+
+*Suara:* “Bangkit.”
+
+Lucien menatap kotak, menatap mata yang seakan hidup di kayu itu.
+
+*Lucien:* “Bangkit… oke. Aku lihat dulu.”
+
+Ia menempatkan kedua tangan di atas kotak. Sunyi mengalir keluar, menenangkan. Tapi di dalam ketenangan itu, sesuatu lain juga bangkit. Lebih tua, lebih besar dari Circle.
+
+Lampu di balkon bergetar sebentar. Riak energi muncul di udara. Lucien menunduk, fokus.
+
+*Lucien:* “Diam… tunggu… jangan salah langkah.”
+
+Ia menarik napas panjang.
+
+*Lucien:* “Biar kubuat percobaan kecil.”
+
+Lucien memutar relik perlahan, jari-jarinya menyentuh ukiran halus.
+
+*Lucien:* “Kalau aku cuma sentuh ringan, apa yang terjadi?”
+
+Cahaya samar muncul di permukaan relik. Tangannya sedikit panas.
+
+*Lucien:* “Ah… iya, ada respon.”
+
+Ia mencoba menarik sunyi sedikit lebih jauh, memperluas radiusnya.
+Lingkungan di kamar tetap diam, tapi kotak bergetar lagi. Cahaya memantul lebih terang.
+
+*Lucien:* “Ini… menyenangkan. Aku bisa… merasakan lebih banyak.”
+
+Ia menatap kotak dengan mata setengah berbinar, setengah khawatir.
+
+*Lucien:* “Kalau Gereja tahu… mereka pasti tidak akan senang.”
+
+Malam semakin dalam. Semua orang di Funia tidur. Tapi Lucien tidak.
+Ia menyesuaikan ritme tangannya dengan relik, merasakan sunyi dan getaran aneh itu bersatu.
+
+*Suara:* “Lebih jauh…”
+
+Lucien menatap sekeliling.
+
+*Lucien:* “Lebih jauh… oke.”
+Ia mencondongkan tubuh, menekan tangan ke relik. Sunyi meluas. Ruangan terasa lebih berat. Kotak bergetar lebih kuat. Riak cahaya memantul ke dinding.
+
+Ia tersenyum lagi, kali ini sedikit kagum.
+
+*Lucien:* “Jadi, ini… bukan hanya Circle 9-ku. Ada sesuatu di sini. Sesuatu yang… lain.”
+
+Hening malam itu pecah oleh langkah kaki di koridor. Lucien menoleh.
+
+*Lucien:* “Siapa?”
+
+Tidak ada siapa-siapa. Hanya bayangan lampu yang bergerak. Tapi ia bisa merasakan sesuatu—sesuatu mengamati, menunggu.
+
+Lucien menarik napas, menepuk meja.
+
+*Lucien:* “Diam… tunggu. Aku masih belajar.”
+
+Ia menatap kotak lagi.
+
+*Lucien:* “Ini baru permulaan. Aku harus tahu… seberapa jauh kau bisa bawa aku.”
+
+Dan di balik sunyi, sesuatu mulai merespons. Tidak tergesa. Tidak menakutkan. Tetapi sadar. Lebih tua dari Circle. Lebih tua dari Gereja.
+
+Malam itu, Lucien memahami:
+
+*Lucien:* “Silent bukan hanya diam. Silent adalah memilih kapan dunia harus berhenti meresponsnya.”
+
+Dan sesuatu di dalam dirinya… perlahan, mulai bangkit.`);
+    } else {
+      document.write(`Isi cerita Bab ${i}, Chapter ${j}...`);
+    }
+
+    document.write(`</p>
+      <div class="like-btn" onclick="toggleLike('bab${i}-ch${j}')">❤️ <span id="like-bab${i}-ch${j}">0</span></div>
+      <div class="comment-section">
+        <h3>Komentar:</h3>
+        <textarea id="comment-bab${i}-ch${j}" placeholder="Tulis komentar..."></textarea>
+        <button onclick="addComment('bab${i}-ch${j}')">Kirim</button>
+        <div id="comments-list-bab${i}-ch${j}"></div>
+      </div>
+      <div style="display:flex; justify-content:space-between; margin-top:20px;">
+        <div class="back" onclick="openSection('bab${i}')">← Kembali ke Bab ${i}</div>
+        <div class="back" onclick="openSection('arsip')">← Kembali ke Arsip Bab</div>
+      </div>
+    </section>`);
+  }
+}
+</script>
+
+<!-- SCRIPT LIKE & KOMENTAR -->
+<script>
+const likeCounts = {};
+const commentsData = {};
+
 function openSection(id){
   document.querySelectorAll('section').forEach(s=>s.style.display='none');
   document.getElementById(id).style.display='block';
+  renderLikesAndComments(id);
 }
 
 function openChapter(bab, chapter){
@@ -319,20 +346,47 @@ function openChapter(bab, chapter){
 }
 
 function toggleLike(chapterId){
-  const span = document.getElementById('like-'+chapterId);
-  span.textContent = parseInt(span.textContent)+1;
+  if(!likeCounts[chapterId]) likeCounts[chapterId]=0;
+  likeCounts[chapterId]++;
+  document.getElementById('like-'+chapterId).textContent = likeCounts[chapterId];
 }
 
 function addComment(chapterId){
   const textarea = document.getElementById('comment-'+chapterId);
-  const list = document.getElementById('comments-list-'+chapterId);
-  if(textarea.value.trim()==='') return;
-  const div = document.createElement('div');
-  div.textContent = textarea.value;
-  div.style.borderBottom='1px solid #444';
-  div.style.padding='4px 0';
-  list.appendChild(div);
+  if(!textarea) return;
+  const value = textarea.value.trim();
+  if(value==='') return;
+  if(!commentsData[chapterId]) commentsData[chapterId]=[];
+  commentsData[chapterId].push(value);
   textarea.value='';
+  renderComments(chapterId);
+}
+
+function renderComments(chapterId){
+  const list = document.getElementById('comments-list-'+chapterId);
+  if(!list) return;
+  list.innerHTML='';
+  const comments = commentsData[chapterId] || [];
+  comments.forEach(c=>{
+    const div = document.createElement('div');
+    div.textContent = c;
+    div.style.borderBottom='1px solid #444';
+    div.style.padding='4px 0';
+    list.appendChild(div);
+  });
+}
+
+function renderLikesAndComments(sectionId){
+  const likes = document.querySelectorAll('#'+sectionId+' .like-btn span');
+  likes.forEach(span=>{
+    const chapterId = span.id.replace('like-','');
+    span.textContent = likeCounts[chapterId] || 0;
+  });
+  const comments = document.querySelectorAll('#'+sectionId+' .comment-section');
+  comments.forEach(cs=>{
+    const chapterId = cs.querySelector('textarea').id.replace('comment-','');
+    renderComments(chapterId);
+  });
 }
 
 window.addEventListener('scroll',()=>{
@@ -342,5 +396,6 @@ window.addEventListener('scroll',()=>{
   document.getElementById('progressBar').style.width = scrolled+'%';
 });
 </script>
+
 </body>
 </html>
