@@ -3,43 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chronicles - Web Manhwa</title>
+<title>Chronicles - Web Novel</title>
 <style>
-/* ===== Umum ===== */
 body { margin:0; font-family:'Arial', sans-serif; background:#f5f5f5; color:#222; }
 header { text-align:center; padding:20px; background:#1b1b1b; color:#fff; }
-.cover { width:100%; max-width:600px; border-radius:10px; margin-bottom:15px; }
 h1, h2 { margin:10px 0; }
-
-/* ===== Daftar Chapter ===== */
 .chapter-list ul { list-style:none; padding:0; display:flex; flex-wrap:wrap; justify-content:center; }
 .chapter-list li { margin:10px; }
 .chapter-list a { text-decoration:none; color:#1b1b1b; background:#ffc107; padding:10px 20px; border-radius:5px; font-weight:bold; }
 .chapter-list a:hover { background:#ffb300; }
-
-/* ===== Chapter Container ===== */
 .chapter-container { max-width:600px; margin:20px auto; }
-.chapter-container img { width:100%; display:block; margin-bottom:15px; border-radius:5px; }
-
-/* ===== Navigasi Chapter ===== */
+.chapter-container img, .chapter-container p { width:100%; display:block; margin-bottom:15px; border-radius:5px; }
 .chapter-nav { display:flex; justify-content:space-between; padding:10px 20px; background:#1b1b1b; }
 .chapter-nav a, .chapter-nav button { color:#fff; background:#ff5722; border:none; padding:8px 15px; border-radius:5px; text-decoration:none; font-weight:bold; cursor:pointer; }
 .chapter-nav a:hover, .chapter-nav button:hover { background:#e64a19; }
-
-/* ===== Tampilan Responsif ===== */
 @media(max-width:700px){ .chapter-nav { flex-direction:column; gap:10px; } }
 </style>
 </head>
 <body>
 
-<!-- ===== Header / Cover ===== -->
 <header>
-<img src="assets/images/cover.jpg" alt="Lucien - Chronicles Manhwa Cover" class="cover">
 <h1>Chronicles</h1>
 <p>Penulis: Ade Angga Pratama (Shenzhou)</p>
 </header>
 
-<!-- ===== Daftar Chapter ===== -->
 <section class="chapter-list">
 <h2>Daftar Chapter</h2>
 <ul>
@@ -56,32 +43,28 @@ h1, h2 { margin:10px 0; }
 </ul>
 </section>
 
-<!-- ===== Chapters ===== -->
+<!-- ===== Chapter Containers ===== -->
 <div id="chapter1" class="chapter-container">
 <div class="chapter-nav"><button onclick="scrollToPrevChapter(1)">⬅ Kembali</button><button onclick="scrollToNextChapter(1)">Next ➡</button></div>
-<img src="assets/images/chapter1-page1.jpg" alt="Chapter 1 Page 1">
-<img src="assets/images/chapter1-page2.jpg" alt="Chapter 1 Page 2">
+<p>Ini adalah isi Chapter 1. Tambahkan teks atau gambar di sini.</p>
 <div class="chapter-nav"><button onclick="scrollToPrevChapter(1)">⬅ Kembali</button><button onclick="scrollToNextChapter(1)">Next ➡</button></div>
 </div>
 
 <div id="chapter2" class="chapter-container">
 <div class="chapter-nav"><button onclick="scrollToPrevChapter(2)">⬅ Kembali</button><button onclick="scrollToNextChapter(2)">Next ➡</button></div>
-<img src="assets/images/chapter2-page1.jpg" alt="Chapter 2 Page 1">
-<img src="assets/images/chapter2-page2.jpg" alt="Chapter 2 Page 2">
+<p>Ini adalah isi Chapter 2. Tambahkan teks atau gambar di sini.</p>
 <div class="chapter-nav"><button onclick="scrollToPrevChapter(2)">⬅ Kembali</button><button onclick="scrollToNextChapter(2)">Next ➡</button></div>
 </div>
 
 <div id="chapter3" class="chapter-container">
 <div class="chapter-nav"><button onclick="scrollToPrevChapter(3)">⬅ Kembali</button><button onclick="scrollToNextChapter(3)">Next ➡</button></div>
-<img src="assets/images/chapter3-page1.jpg" alt="Chapter 3 Page 1">
-<img src="assets/images/chapter3-page2.jpg" alt="Chapter 3 Page 2">
+<p>Ini adalah isi Chapter 3. Tambahkan teks atau gambar di sini.</p>
 <div class="chapter-nav"><button onclick="scrollToPrevChapter(3)">⬅ Kembali</button><button onclick="scrollToNextChapter(3)">Next ➡</button></div>
 </div>
 
 <!-- Tambahkan chapter 4–10 dengan pola yang sama -->
 
 <script>
-// ===== Navigasi Chapter Aman =====
 const totalChapters = 10;
 
 function scrollToNextChapter(current){
